@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman|Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e817da4ca7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <header>
+        <h1>
+            <span id="first">Meal</span>
+            <span id="second">planner</span>
+        </h1>
+        <div class="login-name">
+            <p class="name">Name</p>
+            <i class="far fa-2x fa-user-circle"></i>
+        </div>
+    </header>
+    <main class="main_app">
+        <aside>
+            <div class="aside-menu">
+                <ul>
+                    <li id="desktop_button">
+                        <a>Desktop</a>
+                        <i class="arrow-icon"></i>
+                    </li>
+                    <li id="all_recipes_button">
+                        <a>Recipes</a>
+                        <i class="arrow-icon"></i>
+                    </li>
+                    <li id="all_plans_button">
+                        <a>Plans</a>
+                        <i class="arrow-icon"></i>
+                    </li>
+                    <div id="menu_blocker"></div>
+                </ul>
+            </div>
+        </aside>
+        <div class="firstvisit_form">
+            <div class="width_limit">
+                <h2>Hello,</h2>
+                <h3>It looks like you're here for a first time!</h3>
+                <form>
+                    <input type="text" name="lastname" placeholder="Give us Your name;)">
+                    <button id="name_button" type="submit" value="Submit">Start!</button>
+                </form>
+                <p>Give us your name and we will set up our meal planner App for you :) </p>
+            </div>
+        </div>
+        <!-- main panel -->
+        <div class="main-panel">
+            <div class="panel-top">
+                <div class="widgets">
+                    <div id="add_recipe">
+                        <i class="far fa-plus-square"></i>
+                        <h3>Add Recipe</h3>
+                    </div>
+                    <div id="add_plan">
+                        <i class="far fa-plus-square"></i>
+                        <h3>Add Plan</h3>
+                    </div>
+                </div>
+                <div class="notifications-widget">
+                    <div class="notifications-element info">
+                        <i class="fas fa-info"></i>
+                        <p id="recipe_widget">Remember to add recipes first!</p>
+                        <i class="fas fa-times exit-first"></i>
+                    </div>
+                    <div class="notifications-element warning">
+                        <i class="fas fa-exclamation"></i>
+                        <p id="plan_widget">Remeber to add plan!</p>
+                        <i class="fas fa-times exit-second"></i>
+                    </div>
+                    <div class="notifications-element success">
+                        <i class="fas fa-check"></i>
+                        <p>It's great to have you, we wish you a successful planning! Enjoy<br>  your meal! :)</p>
+                        <i class="fas fa-times exit-third"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="main-panel-plany">
+                <div class="width_limit">
+                    <p>Your plan for week number <span id="week_no">...</span> :</p>
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Monday</th>
+                                    <th scope="col">Tuesday</th>
+                                    <th scope="col">Wednesday</th>
+                                    <th scope="col">Thursday</th>
+                                    <th scope="col">Friday</th>
+                                    <th scope="col">Saturday</th>
+                                    <th scope="col">Sunday</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="monday">Breakfast</td>
+                                    <td class="tuesday">Breakfast</td>
+                                    <td class="wednesday">Breakfast</td>
+                                    <td class="thursday">Breakfast</td>
+                                    <td class="friday">Breakfast</td>
+                                    <td class="saturday">Breakfast</td>
+                                    <td class="sunday">Breakfast</td>
+                                </tr>
+                                <tr>
+                                    <td class="monday">Second Breakfast</td>
+                                    <td class="tuesday">Second Breakfast</td>
+                                    <td class="wednesday">Second Breakfast</td>
+                                    <td class="thursday">Second Breakfast</td>
+                                    <td class="friday">Second Breakfast</td>
+                                    <td class="saturday">Second Breakfast</td>
+                                    <td class="sunday">Second Breakfast</td>
+                                </tr>
+                                <tr>
+                                    <td class="monday">Lunch</td>
+                                    <td class="tuesday">Lunch</td>
+                                    <td class="wednesday">Lunch</td>
+                                    <td class="thursday">Lunch</td>
+                                    <td class="friday">Lunch</td>
+                                    <td class="saturday">Lunch</td>
+                                    <td class="sunday">Lunch</td>
+                                </tr>
+                                <tr>
+                                    <td class="monday">Dinner</td>
+                                    <td class="tuesday">Dinner</td>
+                                    <td class="wednesday">Dinner</td>
+                                    <td class="thursday">Dinner</td>
+                                    <td class="friday">Dinner</td>
+                                    <td class="saturday">Dinner</td>
+                                    <td class="sunday">Dinner</td>
+                                </tr>
+                                <tr>
+                                    <td class="monday">Supper</td>
+                                    <td class="tuesday">Supper</td>
+                                    <td class="wednesday">Supper</td>
+                                    <td class="thursday">Supper</td>
+                                    <td class="friday">Supper</td>
+                                    <td class="saturday">Supper</td>
+                                    <td class="sunday">Supper</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="navigate-buttons">
+                        <a id="previous">
+                            <i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i>
+                            <span>previous</span>
+                        </a>
+                        <a id="next"><span>next</span>
+                            <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add_plan_modal">
+            <div class="add_top">
+                <h3>New Plan</h3>
+                <button id="exit_plan_button">Save and Close</button>
+            </div>
+            <form>
+                <div>
+                    <label for="plan_name">Plan Name</label>
+                    <input type="text" id="plan_name" name="plan_name"
+                        placeholder="Provide name for your plan">
+                </div>
+                <div>
+                    <label for="plan_name">Plan Description</label>
+                    <textarea id="plan_description" name="plan_description"
+                        placeholder="Provide description for your plan"></textarea>
+                </div>
+                <div>
+                    <label for="week_number">Week Number</label>
+                    <input type="text" id="week_number" name="week_number" placeholder="...">
+                </div>
+            </form>
+            <table>
+                <tr class="meal_type">
+                    <td class="empty_one"></td>
+                    <td>Breakfast</td>
+                    <td>Second Breakfast</td>
+                    <td>Lunch</td>
+                    <td>Dinner</td>
+                    <td>Supper</td>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="add_recipe_modal">
+            <div class="add_top">
+                <h3>New Recipe</h3>
+                <button id="exit_recipe_button">Save and Close</button>
+            </div>
+            <form>
+                <div>
+                    <label for="recipe_name">Recipe Name</label>
+                    <input type="text" id="recipe_name" placeholder="Provide name for your recipe">
+                </div>
+                <div>
+                    <label for="recipe_name">Description</label>
+                    <textarea id="recipe_description"
+                        placeholder="Provide description"></textarea>
+                </div>
+            </form>
+            <div class="recipe_two_colls">
+                <div>
+                    <h3>Instructions</h3>
+                    <div class="input_div">
+                        <textarea name="instructions" id="instructions" cols="30" rows="10"
+                            placeholder="Provide instructions"></textarea>
+                        <i class="fas fa-plus-square" id="plus_instructions"></i>
+                    </div>
+                    <div class="lists">
+                        <ol id="instructions_list">
+                        </ol>
+                    </div>
+                </div>
+                <div>
+                    <h3>Ingredients</h3>
+                    <div class="input_div">
+                        <input type="text" id="ingridients" placeholder="Provide all ingredients that are necessary">
+                        <i class="fas fa-plus-square" id="plus_ingridients"></i>
+                    </div>
+                    <div class="lists">
+                        <ul id="ingridients_list">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="all_recipes_modal">
+            <div class="all_recipes_top">
+                <h3>Recipes List</h3>
+                <i class="fas fa-plus-square" id="add_recipe_icon"></i>
+            </div>
+            <div class="all_recipes_main">
+                <div class="all_recipes_info">
+                    <h2>ID</h2>
+                    <h2>NAME</h2>
+                    <h2>DESCRIPTION</h2>
+                    <h2>ACTIONS</h2>
+                </div>
+                <section class="recipes_list">
+                </section>
+            </div>
+        </div>
+
+        <div class="all_plans_modal">
+            <div class="all_plans_top">
+                <h3>Plans List</h3>
+                <i class="fas fa-plus-square" id="add_plan_icon"></i>
+            </div>
+            <div class="all_plans_main">
+                <div class="all_plans_info">
+                    <h2>ID</h2>
+                    <h2>NAME</h2>
+                    <h2>DESCRIPTION</h2>
+                    <h2>WEEK</h2>
+                    <h2>ACTIONS</h2>
+                </div>
+                <section class="plans_list">
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</html>

@@ -1,0 +1,51 @@
+.columns {
+  width: 100%;
+  background-color: $color-headText;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.aboutAplication {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background-color: $color-background;
+
+  article {
+    font-family: $font-text;
+    max-height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    margin: 60px;
+    opacity: 60%;
+    color: $color-headText;
+  }
+
+  img {
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 6rem;
+    margin-bottom: 20px;
+    opacity: 60%;
+  }
+
+  h2 {
+
+    max-width: 100%;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+
+  }
+
+  p {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

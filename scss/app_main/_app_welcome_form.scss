@@ -1,0 +1,60 @@
+.firstvisit_form {
+    @include base-app-view;
+    position: absolute;
+    top: 160px;
+    left: 220px;
+    width: 80%;
+    height: 90%;
+    .width_limit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 400px;
+      height: 34%;
+      text-align: center;
+      margin-top: 80px;
+      h2 {
+        font-size: 30px;
+        font-family: "Open Sans", sans-serif;
+        margin-bottom: 18px;
+      }
+      h3 {
+        font-size: 24px;
+        font-family: "Open Sans", sans-serif;
+        margin-bottom: 22px;
+        line-height: 1.2;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        input {
+          width: 240px;
+          height: 20px;
+          min-height:20px;
+          margin-bottom: 18px;
+          border: 1px solid $color-tableIconText;
+        }
+        button {
+          border-style: none;
+          font-size: 16px;
+          color: #fff;
+          background-color: $color-headButton;
+          width: 100px;
+          height: 30px;
+          min-height: 30px;
+          margin-bottom: 26px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      p {
+        font-size: 1.1rem;
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.4;
+      }
+    }
+  }

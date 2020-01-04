@@ -1,0 +1,46 @@
+.cta {
+  width: 100%; 
+  height: 220px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    max-width: 50%;
+    margin-left: 4rem;
+    h3 {
+      font-size: 30px;
+      margin: 0;
+    }
+    p {
+      font-size: 18px;
+      margin-top: 1.5rem;
+    }
+  }
+  a {
+    background-color: $color-headButton;
+    color: white;
+    border-style: none;
+    width: 15%;
+    height: 25%;
+    min-width: 15%;
+    min-height: 20%;
+    font-size: 20px;
+    margin-right: 4rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &:hover {
+      background-color: white;
+      color: $color-headButton;
+    }
+  }
+}

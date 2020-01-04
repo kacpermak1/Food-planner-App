@@ -1,0 +1,177 @@
+.add_recipe_modal {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-background;
+  width: 80%;
+  height: 90%;
+  position: absolute;
+  top: 160px;
+  left: 220px;
+  color: $color-headText;
+  padding: 40px;
+  z-index: 800;
+  overflow: auto;
+  .add_top {
+    width: 95%;
+    height: 50px;
+    min-height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid $color-tableIconText;
+    h3 {
+      font-size: 28px;
+      color: $color-headButton;
+      text-transform: uppercase;
+    }
+    button {
+      border-style: none;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: $color-headButton;
+      text-align: center;
+      width: 16%;
+      height: 90%;
+      margin-bottom: 26px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  form {
+    width: 100%;
+    height: 30%;
+    margin: 20px 0 20px 0;
+    color: $color-headText;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      label {
+        font-size: 22px;
+        text-align: center;
+      }
+      input {
+        border: 1.2px solid $color-tableIconText;
+        color: $color-headText;
+      }
+      textarea {
+        color: $color-headText;
+        max-height: 120px;
+        max-width: 80%;
+        border: 1px solid $color-tableIconText;
+      }
+      #recipe_name {
+        width: 80.5%;
+      }
+      #recipe_description {
+        width: 80%;
+        height: 100px;
+      }
+    }
+  }
+  .recipe_two_colls {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    div {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 22px;
+      color: $color-headText;
+      padding: 14px;
+      h3 {
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        border-bottom: 2px solid $color-tableIconText;
+        padding: 5px;
+      }
+      .input_div {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        textarea {
+          width: 90%;
+          max-width: 90%;
+          height: 100px;
+          border: 1px solid $color-tableIconText;
+          margin-right: 6px;
+        }
+        input {
+          height: 30px;
+          width: 94%;
+          border: 1px solid $color-tableIconText;
+          color: $color-headText;
+          margin-right: 6px;
+        }
+        i{
+            font-size: 28px;
+            color: $color-successText;
+            &:hover{
+              cursor: pointer;
+            }
+        }
+      }
+    }
+    .lists {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      overflow: scroll;
+      font-size: 14px;
+      margin: 10px;
+      margin-bottom: 2px;
+      padding-bottom: 2px;
+      .input_editable{
+        width:300px;
+        height:40px;
+        border:2px solid lightgray;
+      }
+      ul{
+          list-style: disc;
+          margin-left: 10px;  
+      }
+      ol{
+          list-style: decimal;
+          margin-left: 10px;
+      }
+      li{
+          margin: 4px;
+      }
+      .fa-edit{
+        color: rgb(221, 207, 17);
+        font-size:16px;
+        margin-left:4px;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+      .fa-trash-alt{
+        color: rgb(160, 19, 19);
+        font-size:16px;
+        margin-left:4px;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

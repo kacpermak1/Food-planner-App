@@ -1,0 +1,75 @@
+.main-panel-plany {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px dashed $color-tableIconText;
+  background-color: $color-background;
+  color: $color-headText;
+  width: 100%;
+  height: 65%;
+
+  .table {
+    padding: 0 30px;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $color-headButton;
+    text-align: center;
+    line-height: 3rem;
+  }
+
+  table {
+    color: $color-headText;
+    width:100%;
+    td,
+    th {
+      overflow: hidden;
+      overflow-wrap: break-word;
+      padding: 14px 3px;
+      border-collapse: collapse;
+      max-width: 152px;
+      min-width: 152px;
+      height:40px;
+    }
+
+    th {
+      font-weight: 700;
+      text-align: start;
+      color: $color-headText;
+      border-top: 1px solid $color-tableIconText;
+      border-bottom: 1px solid $color-tableIconText;
+    }
+
+    td {
+      color: $color-tableIconText;
+      font-size: 0.8rem;
+      padding-right: 45px;
+      line-height: 1.2;
+    }
+
+    tr {
+      border-bottom: 1px solid $color-tableIconText;
+    }
+  }
+
+  .navigate-buttons {
+    padding: 30px 10px 0 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-size: 0.8rem;
+
+    a {
+      color: $color-headButton;
+      &:hover{
+        cursor: pointer;
+      }
+      span {
+        padding: 0 5px;
+      }
+      
+    }
+  }
+}

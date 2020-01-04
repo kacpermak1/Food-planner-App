@@ -1,0 +1,122 @@
+.add_plan_modal {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-background;
+  width: 80%;
+  height: 90%;
+  position: absolute;
+  top: 160px;
+  left: 220px;
+  color: $color-headText;
+  padding: 40px;
+  z-index: 800;
+  overflow: auto;
+  .add_top {
+    width: 95%;
+    height: 50px;
+    min-height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid $color-tableIconText;
+    h3 {
+      font-size: 28px;
+      color: $color-headButton;
+      text-transform: uppercase;
+    }
+    button {
+      border-style: none;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: $color-headButton;
+      text-align: center;
+      width: 16%;
+      height: 90%;
+      margin-bottom: 26px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  form {
+    width: 100%;
+    height: 30%;
+    margin: 20px 0 20px 0;
+    color: $color-headText;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      label {
+        font-size: 22px;
+        text-align: center;
+      }
+      input {
+        border: 1.2px solid $color-tableIconText;
+        color: $color-headText;
+      }
+      textarea {
+        color: $color-headText;
+        max-height: 120px;
+        max-width: 80%;
+        border: 1px solid $color-tableIconText;
+      }
+      #plan_name {
+        width: 80.5%;
+      }
+      #plan_description {
+        width: 80%;
+        height: 100px;
+      }
+      #week_number {
+        width: 30px;
+        margin-left: 26px;
+        text-align: center;
+      }
+      &:nth-child(3) {
+        justify-content: flex-start;
+      }
+    }
+  }
+  table {
+    max-width: 100%;
+    max-height: 400px;
+    width: 90%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    tr {
+      td {
+        border-bottom: 1px solid $color-tableIconText;
+        border-top: 1px solid $color-tableIconText;
+        width: 200px;
+        text-align: center;
+        padding: 10px;
+        select {
+          width: 95%;
+        }
+      }
+      td:first-child {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+    .meal_type {
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: bold;
+      td:first-of-type {
+        border-top: none;
+      }
+    }
+  }
+}

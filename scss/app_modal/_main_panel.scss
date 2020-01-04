@@ -1,0 +1,134 @@
+.main-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80%;
+  height: 90%;
+  position: absolute;
+  top: 160px;
+  left: 220px;
+  color: $color-headText;
+  padding: 0;
+  overflow: auto;
+  .panel-top {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .widgets {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: $color-successText;
+      div {
+        width: 45%;
+        height: 80%;
+        border: 1px dashed $color-successText;
+        background-color: $color-background;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        text-align: center;
+        i{
+            font-size: 70px;
+        }
+        h3{
+            font-size: 1.5rem;
+            margin-top: 1.2rem;
+        }
+      }
+    }
+
+    .notifications-widget {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .notifications-element {
+        background: $color-background;
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 680px;
+        height: 60px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin: 5px;
+      }
+
+      .fa-info, .fa-exclamation, .fa-check {
+        display: block;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        line-height: 2rem;
+        font-size: 1.3rem;
+        margin: 10px;
+      }
+
+      .info {
+        color: $color-infoText;
+        border: 1px $color-infoText dashed;
+
+        .fas {
+          background-color: $color-infoText;
+          color: #FFF;
+        }
+      }
+
+      .warning {
+        color: $color-warningText;
+        border: 1px $color-warningText dashed;
+
+        .fas {
+          background-color: $color-warningText;
+          color: #FFF;
+        }
+      }
+
+      .success  {
+        color: $color-successText;
+        border: 1px $color-successText dashed;
+
+        .fas {
+          background-color: $color-successText;
+          color: #FFF;
+        }
+      }
+
+      .fa-times {
+        position: absolute;
+        top: 0.4rem;
+        right: 0.4rem;
+        line-height: 1.1rem;
+        font-size: 0.8rem;
+        text-align: center;
+        border-radius: 3px;
+        width: 1.1rem;
+        height: 1rem;
+        cursor: pointer;
+      }
+    }
+
+    // class to close notifications
+
+    .close {
+      visibility: hidden;
+    }
+  }
+}
+
+
+

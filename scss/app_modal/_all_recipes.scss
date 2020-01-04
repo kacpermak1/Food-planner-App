@@ -1,0 +1,125 @@
+.all_recipes_modal {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-background;
+  width: 80%;
+  height: 90%;
+  position: absolute;
+  top: 160px;
+  left: 220px;
+  color: $color-headText;
+  padding: 40px;
+  z-index: 600;
+  overflow: auto;
+  .all_recipes_top {
+    width: 95%;
+    height: 50px;
+    min-height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid $color-tableIconText;
+    h3 {
+      font-size: 28px;
+      color: $color-headButton;
+      text-transform: uppercase;
+    }
+    i {
+      font-size: 28px;
+      color: $color-successText;
+    }
+  }
+  .all_recipes_main {
+    width: 100%;
+    height: 90%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    .all_recipes_info {
+      width: 95%;
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      border-bottom: 1px solid $color-tableIconText;
+      background-color: $color-background;
+      top: 0;
+      h2 {
+        font-size: 20px;
+        &:nth-of-type(1) {
+          margin-right: 60px;
+        }
+        &:nth-of-type(2) {
+          margin-right: 120px;
+        }
+        &:nth-of-type(3) {
+          margin-right: 500px;
+        }
+        &:nth-of-type(4) {
+          margin-right: 40px;
+        }
+      }
+    }
+    .recipes_list {
+        width:100%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 50px;
+        overflow: scroll;
+      .each_recipe {
+        width: 95%;
+        height: 120px;
+        min-height: 120px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid $color-tableIconText;
+        h2 {
+          width: 170px;
+          overflow-wrap: break-word;
+          &:nth-of-type(1) {
+            width: 40px;
+            margin-right: 20px;
+          }
+          &:nth-of-type(2) {
+            margin-right: 20px;
+            margin-left:20px;
+            line-height: 1.4;
+          }
+        }
+        p {
+          width: 600px;
+          margin-right: 10px;
+        }
+        div {
+          width: 80px;
+          margin-right: 16px;
+          i {
+            margin: 6px;
+            font-size: 18px;
+            &:hover {
+              cursor: pointer;
+            }
+            &:nth-of-type(1) {
+              color: rgb(221, 207, 17);
+            }
+            &:nth-of-type(2) {
+              color: rgb(160, 19, 19);
+            }
+          }
+        }
+      }
+    }
+  }
+}
