@@ -12,7 +12,7 @@ Meal planner App allows the user to:<br>
 - Change between plans
 - Display all recipes/plans
 - Edit/Remove any plan or recipe
-- See how many recipes and plan is currently being stored
+- See how many recipes and plans is currently being stored
 
 ## Used
 
@@ -24,8 +24,5 @@ Meal planner App allows the user to:<br>
 
 ## Preview
 
-Check the preview of the <b>APP</b> here: https://kacpermak1.github.io/Meal-planner-App/app.html
+Check the preview of the <b>APP</b> here: https://kacpermak1.github.io/Meal-planner-App/app.html <br>
 Check the preview of the <b>WEBSITE</b> here: https://kacpermak1.github.io/Meal-planner-App/
-
-
-
