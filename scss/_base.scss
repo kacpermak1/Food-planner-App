@@ -1,6 +1,7 @@
 html {
   font-size: 14px; // wielkość bazowa
   font-family: $font-text;
+  scroll-behavior: smooth;
 }
 
 body {
