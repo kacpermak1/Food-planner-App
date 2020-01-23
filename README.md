@@ -22,7 +22,7 @@ Meal planner App allows the user to:<br>
 - jQuery
 - Gulp
 
-## Screen-shots
+## Screenshots
 
 ![Meal planner app screenshot](demo/1.png)<br/>
 
@@ -41,4 +41,4 @@ Meal planner App allows the user to:<br>
 ## Preview
 
 Check the preview of the <b>APP</b> here: https://kacpermak1.github.io/Meal-planner-App/app.html <br>
-Check the preview of the <b>WEBSITE</b> here: https://kacpermak1.github.io/Meal-planner-App/
+Check the preview of the <b>Landing page</b> here: https://kacpermak1.github.io/Meal-planner-App/
