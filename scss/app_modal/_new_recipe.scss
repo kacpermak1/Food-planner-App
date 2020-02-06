@@ -5,6 +5,8 @@
   background-color: $color-background;
   width: 80%;
   height: 90%;
+  max-height:1400px;
+  max-width:2300px;
   position: absolute;
   top: 160px;
   left: 220px;
@@ -16,6 +18,7 @@
     width: 95%;
     height: 50px;
     min-height: 40px;
+    max-width:1600px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,6 +45,7 @@
   }
   form {
     width: 100%;
+    max-width:1600px;
     height: 30%;
     margin: 20px 0 20px 0;
     color: $color-headText;
@@ -78,6 +82,7 @@
   }
   .recipe_two_colls {
     width: 100%;
+    max-width:1600px;
     height: 500px;
     display: flex;
     flex-direction: row;
